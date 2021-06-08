@@ -42,13 +42,18 @@ public class PmsBrandServiceImpl implements PmsBrandService {
         return 0;
     }
 
-    @Override
+    /*@Override
     public List<PmsBrand> ListBrand(int pageNum, int pageSize) {
+        return null;
+    }*/
+
+    @Override
+    public PmsBrand getBrand(Long id) {
         return null;
     }
 
     @Override
-    public PmsBrand getBrand(Long id) {
+    public List<PmsBrand> listBrand(Integer pageNum, Integer pageSize) {
         return null;
     }
 }

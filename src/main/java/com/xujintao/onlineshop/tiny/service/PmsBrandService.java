@@ -20,7 +20,9 @@ public interface PmsBrandService {
 
     int deleteBrand(Long id);
 
-    List<PmsBrand> ListBrand(int pageNum, int pageSize);
+    //List<PmsBrand> ListBrand(int pageNum, int pageSize);
 
     PmsBrand getBrand(Long id);
+
+    List<PmsBrand> listBrand(Integer pageNum, Integer pageSize);
 }
