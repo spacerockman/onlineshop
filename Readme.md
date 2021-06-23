@@ -30,3 +30,23 @@
             <overwrite>true</overwrite>
             </configuration>
         </plugin>
+  
+- JWT
+  - <!--JWT(Json Web Token)登录支持,缺少此jar包把版本转为0.9.1-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+  
+  - <!--@NotEmpty 找不到-->
+        <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+  
+- DAO层报错
+  - UmsAdminRoleRelationDao
+  - 报错原因是UserDao的bean没有被找到。所以可以通过@Component注解来标记你要自动的类
+  - @Component
+    @Mapper
